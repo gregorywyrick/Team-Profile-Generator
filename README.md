@@ -2,7 +2,7 @@
 
 ## Description
 
-I am please to bring you this iteration of the team card generator. The purpose behind creating this project was to help various companies keep track of their teams chain of command, as well as general info for each type of employee. Depending on the type of employee chosen, the user is given various information about each, however all of the various roles will show you their name, email address, and emplyee id. 
+I am pleased to bring you this iteration of the team card generator. The purpose behind creating this project was to help various companies keep track of their teams chain of command, as well as general info for each type of employee. Depending on the type of employee chosen, the user is given various information about each, however all of the various roles will show you their name, email address, and emplyee id. 
 
 ## Installation
 

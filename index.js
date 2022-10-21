@@ -3,12 +3,10 @@ const Manager = require(`./lib/Manager`);
 const Engineer = require(`./lib/Engineer`)
 const inquirer = require(`inquirer`);
 const path = require(`path`);
-const fs = require(`path`);
+const fs = require(`fs`);
 const OUTPUT_DIR = path.resolve(__dirname, `dist`);
 const generatePath = path.join(OUTPUT_DIR, `team.html`);
-const makeTeam = require('./src/page-template');
-const { default: Choices } = require('inquirer/lib/objects/choices');
-const { run } = require('jest');
+const generateTeam = require('./src/page-template');
 
 const teamArray = [];
 
@@ -138,7 +136,7 @@ function addIntern() {
 
 function buildHTML () {
     console.log(`Your team has been created`);
-    fs.writeFileSync(generatePath, makeTeam(teamArray), `UTF-8`)
+    fs.writeFileSync(generatePath, generateTeam(teamArray), `UTF-8`)
 }
 theTeam();
 }

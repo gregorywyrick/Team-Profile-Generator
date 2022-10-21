@@ -1,4 +1,4 @@
-const makeTeam = team => {
+const generateTeam = team => {
  const makeManger = (manager) => {
     `<div class="card employee-card">
     <div class="card-header bg-primary">
